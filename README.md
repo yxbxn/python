@@ -47,3 +47,9 @@
 - 새로운 나눗셈노드, exp노드로 Sigmoid 계층 구현
 - 순전파의 출력값을 이용해 간소화하는 Sigmoid 계층 구현
 - 행렬곱 Affine 계층 구현, 스칼라값 1차원,2차원배열(Batch) 순으로 확장해 구현
+
+# 역전파를 포함한 신경망 학습 전과정 구현 - 22.03.02
+- Softmax-with-Loss 계층의 구현과 역전파, softmax는 정규화하는 역할
+- Softmax-with-Loss 계층의 역전파는 y-t로 항등함수-오차제곱합(SSE) 조합과 동일함
+- 신경망 학습 전과정은 계층(Affine,ReLU,Softmax 등)을 정의하면 간단함. 계층을 순차적으로 추가
+- 2층 신경망의 경우 Affine1-ReLU-Affine2-Softmax-with-Loss 계층의 적용으로 구현가능함
